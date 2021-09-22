@@ -1,0 +1,24 @@
+{
+  "name": "webshop",
+  "version": "1.0.0",
+  "description": "ett projektarbete för att bygga enkel webbshop med \"Stripe\" betalningsmetod",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanan11/WebShop_Stripe.git"
+  },
+  "author": "Kanan & Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanan11/WebShop_Stripe/issues"
+  },
+  "homepage": "https://github.com/Kanan11/WebShop_Stripe#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "stripe": "^8.176.0"
+  }
+}
