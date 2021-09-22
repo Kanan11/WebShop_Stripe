@@ -1,8 +1,8 @@
-POST http://localhost:3000/api/checkout-session
+POST http://localhost:3001/api/checkout-session
 
 ###
 
-POST http://localhost:3000/api/verify-checkout-session
+POST http://localhost:3001/api/verify-checkout-session
 Content-Type: application/json
 
 {

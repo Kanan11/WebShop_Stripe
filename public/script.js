@@ -3,12 +3,12 @@ window.addEventListener('load', main)
 
 function main() {
     
-    const sessionId = localStorage.getItem("session"); //testat att spara i localStorage
-    if(!sessionId){
+    //const sessionId = localStorage.getItem("session"); //testat att spara i localStorage
+    /* if(!sessionId){
         throw new Error("No session id to verify");
     }else{
         console.log(sessionId)
-    }
+    } */
 
     //här vi lyssnar checkout knappen ("här borjar historiken")
    const checkoutButton = document.getElementById('checkout-button')
@@ -17,7 +17,7 @@ function main() {
    //det nycket vi fått från Stripe
    stripe = Stripe('pk_test_51JZsdSEUI9kk9AxtuDRxlKWT3RWFRuKcvNGU1P3LYhrMVRyExpLdYlBtlE25wD1eSPXzWS5ZI9sufngFnnbxMudo00iTiaLYfI')
 
-   verifyCheckoutSession()
+   verifyCheckoutSession();
 }
 
 
@@ -25,6 +25,8 @@ async function proceedToCheckout() {
     try {
         const response = await fetch('/api/checkout-session', { method: 'POST'})
         const session = await response.json()
+        console.log(response)
+        console.log(session)
 
         // om status "OKaj" gå vidare
         if(response.status > 400) {
@@ -50,7 +52,7 @@ async function proceedToCheckout() {
 async function verifyCheckoutSession() {
     const urlParams = new URLSearchParams(window.location.search);
     const sessionId = urlParams.get('session_id');
-
+    
     if(sessionId) {
          // verifiera att sessionen är ok!
         console.log(sessionId);
