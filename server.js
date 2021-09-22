@@ -13,11 +13,11 @@ app.post('/api/checkout-session', async (req, res) => {
             payment_method_types: ["card"],
             line_items: [
             {
-                description: '',
+                description: 'test',
                 price_data: {
                 currency: "sek",
                 product_data: {
-                    name: "",
+                    name: "test",
                 },
                 unit_amount: 10000,
                 },
@@ -25,7 +25,7 @@ app.post('/api/checkout-session', async (req, res) => {
             },
             ],
             mode: "payment",
-            success_url: "http://localhost:3000/some.html",
+            success_url: "http://localhost:3000//?session_id={CHECKOUT_SESSION_ID}",
             cancel_url: "http://localhost:3000",
         });
         res.json({ id: session.id })
@@ -39,18 +39,18 @@ app.post('/api/checkout-session', async (req, res) => {
 app.post('/api/verify-checkout-session', async (req, res) => {
     try {
         const session = await stripe.checkout.sessions.retrieve(req.body.sessionId)
-        //console.log(session)
+        console.log(session)
         if(session) {
             res.send({ isVerified: true })
         } else {
             throw new Error('no session')
         }
     } catch (error) {
-        //console.error(error)
-        //res.send({ isVerified: false });        
+        console.error(error)
+        res.send({ isVerified: false });        
     }
 });
 
 app.use(express.static('public'))
 
-app.listen(3000, () => console.log('Server is on LIVE'))
+app.listen(3001, () => console.log('Server is on LIVE'))
