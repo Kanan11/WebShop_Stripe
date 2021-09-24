@@ -25,11 +25,11 @@ app.post('/api/checkout-session', async (req, res) => {
             },
             ],
             mode: "payment",
-            success_url: "http://localhost:3001//?session_id={CHECKOUT_SESSION_ID}",
+            success_url: "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
             cancel_url: "http://localhost:3001",
         });
         res.json({ id: session.id })
-        
+        console.log(res.json)
     } catch (error) {
         console.error(error)
         res.status(500).json({ error })
