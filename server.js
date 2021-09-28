@@ -1,10 +1,10 @@
-const express = require('express')
-require('dotenv').config('.env')
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
+const express = require("express");
+require("dotenv").config(".env");
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 
-app.use('/api', express.json())
+app.use("/api", express.json());
 
 // Endpoints
 app.post('/api/checkout-session', async (req, res) => {
@@ -39,21 +39,22 @@ app.post('/api/checkout-session', async (req, res) => {
     }
 })
 
-app.post('/api/verify-checkout-session', async (req, res) => {
-    try {
-        const session = await stripe.checkout.sessions.retrieve(req.body.sessionId)
-        console.log(session)
-        if(session) {
-            res.send({ isVerified: true })
-        } else {
-            throw new Error('no session')
-        }
-    } catch (error) {
-        console.error(error)
-        res.send({ isVerified: false });        
+
+app.post("/api/verify-checkout-session", async (req, res) => {
+  try {
+    const session = await stripe.checkout.sessions.retrieve(req.body.sessionId);
+    console.log(session);
+    if (session) {
+      res.send({ isVerified: true });
+    } else {
+      throw new Error("no session");
     }
+  } catch (error) {
+    console.error(error);
+    res.send({ isVerified: false });
+  }
 });
 
-app.use(express.static('public'))
+app.use(express.static("public"));
 
-app.listen(3001, () => console.log('Server is on LIVE'))
+app.listen(3001, () => console.log("Server is on LIVE"));
