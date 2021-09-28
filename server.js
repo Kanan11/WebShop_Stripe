@@ -9,19 +9,22 @@ app.use('/api', express.json())
 // Endpoints
 app.post('/api/checkout-session', async (req, res) => {
     try {
+        const { product } = req.body;
+
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ["card"],
             line_items: [
             {
-                description: 'test',
+                description: product.description,
                 price_data: {
                 currency: "sek",
                 product_data: {
-                    name: "test",
+                    name: product.name,
+                    images: [product.image],
                 },
-                unit_amount: 10000,
+                unit_amount: product.amount * 100,
                 },
-                quantity: 2,
+                quantity: product.quantity,
             },
             ],
             mode: "payment",
@@ -29,7 +32,7 @@ app.post('/api/checkout-session', async (req, res) => {
             cancel_url: "http://localhost:3001",
         });
         res.json({ id: session.id })
-        console.log(res.json)
+        
     } catch (error) {
         console.error(error)
         res.status(500).json({ error })
