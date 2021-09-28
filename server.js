@@ -7,36 +7,38 @@ const app = express();
 app.use("/api", express.json());
 
 // Endpoints
-app.post("/api/checkout-session", async (req, res) => {
-  try {
-    const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
-      line_items: [
-        {
-          description: "test",
-          price_data: {
-            currency: "sek",
-            product_data: {
-              name: "test",
+app.post('/api/checkout-session', async (req, res) => {
+    try {
+        const { product } = req.body;
+
+        const session = await stripe.checkout.sessions.create({
+            payment_method_types: ["card"],
+            line_items: [
+            {
+                description: product.description,
+                price_data: {
+                currency: "sek",
+                product_data: {
+                    name: product.name,
+                    images: [product.image],
+                },
+                unit_amount: product.amount * 100,
+                },
+                quantity: product.quantity,
             },
-            unit_amount: 10000,
-          },
-          quantity: 2,
-        },
-      ],
-      mode: "payment",
-      success_url:
-        "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url:
-        "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    });
-    res.json({ id: session.id });
-    console.log(res.json);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error });
-  }
-});
+            ],
+            mode: "payment",
+            success_url: "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
+            cancel_url: "http://localhost:3001",
+        });
+        res.json({ id: session.id })
+        
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({ error })
+    }
+})
+
 
 app.post("/api/verify-checkout-session", async (req, res) => {
   try {
