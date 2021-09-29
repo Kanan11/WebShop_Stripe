@@ -22,13 +22,13 @@
             "id": 4,
             "title": "CIAO CIAO (Inbakad)",
             "price": 99,
-            "image": "./images/img_4.png"
+            "image": "https://1.bp.blogspot.com/-09r0UYj6caE/W4MLqXj99mI/AAAAAAAAANo/h8z--cuZ14EVIip23J4eOTdNg6b9dFA3QCLcBGAs/s1600/Calzone.jpg"
         },
         {
             "id": 5,
-            "title": "GONDOLA",
+            "title": "GONDOLA med ÄGG",
             "price": 95,
-            "image": "./images/img_5.png"
+            "image": "https://bigmamasandpapas.com/images/items/egg-gondola/3-topping.png"
 
         },
         {
