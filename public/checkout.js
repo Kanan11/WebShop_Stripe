@@ -26,7 +26,7 @@ async function proceedToCheckout() {
         const response = await fetch('/api/checkout-session', { method: 'POST'})
         const session = await response.json()
         console.log(response)
-        console.log(session)
+        alert(session)
 
         // om status "OKaj" gå vidare
         if(response.status > 400) {
