@@ -284,6 +284,31 @@ document.addEventListener("DOMContentLoaded", async () => {
   ui.cartLogic();
 });
 
+verifyCheckoutSession();
+function verifyCheckoutSession() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const sessionId = urlParams.get('session_id');
+
+  if (sessionId) {
+    // verifiera att sessionen är ok!
+    console.log(sessionId);
+    console.log("banan1");
+    const response = fetch('/verify-checkout-session', {
+      headers: { "Content-Type": "application/json" },
+      method: 'POST',
+      body: JSON.stringify({ sessionId })
+    })
+    console.log("banan2");
+    const session = response.json()
+    console.log(session.isVerified)
+    if (session.isVerified) {
+      console.log("banan3");
+      window.location.pathname = "confirmation"
+    } else {
+      alert('Beställningen misslyckades')
+    }
+  }
+}
 window.onload = function () {
 
   /* async () => {
@@ -291,7 +316,6 @@ window.onload = function () {
     let stripe = await stripe('pk_test_51JZsdSEUI9kk9AxtuDRxlKWT3RWFRuKcvNGU1P3LYhrMVRyExpLdYlBtlE25wD1eSPXzWS5ZI9sufngFnnbxMudo00iTiaLYfI')
   } */
   
-  verifyCheckoutSession();
 
 
 
@@ -324,25 +348,5 @@ window.onload = function () {
     })
   }
 
-  async function verifyCheckoutSession() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const sessionId = urlParams.get('session_id');
-
-    if (sessionId) {
-      // verifiera att sessionen är ok!
-      console.log(sessionId);
-      const response = await fetch('/api/verify-checkout-session', {
-        headers: { "Content-Type": "application/json" },
-        method: 'POST',
-        body: JSON.stringify({ sessionId })
-      })
-      const session = await response.json()
-      console.log(session.isVerified)
-      if (session.isVerified) {
-        window.location.pathname = "confirmation"
-      } else {
-        alert('Beställningen misslyckades')
-      }
-    }
-  }
+  
 }
