@@ -284,40 +284,30 @@ document.addEventListener("DOMContentLoaded", async () => {
   ui.cartLogic();
 });
 
-verifyCheckoutSession();
-function verifyCheckoutSession() {
+/* verifyCheckoutSession();
+async function verifyCheckoutSession() {
   const urlParams = new URLSearchParams(window.location.search);
   const sessionId = urlParams.get('session_id');
 
   if (sessionId) {
     // verifiera att sessionen är ok!
     console.log(sessionId);
-    console.log("banan1");
-    const response = fetch('/verify-checkout-session', {
+    const response = fetch('/verify', {
       headers: { "Content-Type": "application/json" },
       method: 'POST',
       body: JSON.stringify({ sessionId })
     })
-    console.log("banan2");
-    const session = response.json()
+    const session = await response.json()
+    console.log(session);
     console.log(session.isVerified)
     if (session.isVerified) {
-      console.log("banan3");
       window.location.pathname = "confirmation"
     } else {
       alert('Beställningen misslyckades')
     }
   }
-}
+} */
 window.onload = function () {
-
-  /* async () => {
-        
-    let stripe = await stripe('pk_test_51JZsdSEUI9kk9AxtuDRxlKWT3RWFRuKcvNGU1P3LYhrMVRyExpLdYlBtlE25wD1eSPXzWS5ZI9sufngFnnbxMudo00iTiaLYfI')
-  } */
-  
-
-
 
   const button_pay = document.getElementById("button_pay")
   if (button_pay) {
@@ -337,9 +327,8 @@ window.onload = function () {
             cart: Object.values(cart),
           }),
         });
+
         const { id } = await response.json();
-        console.log(id);
-        localStorage.setItem("session", id);
         stripe.redirectToCheckout({ sessionId: id });
       } catch (err) {
         console.log(err);
@@ -347,6 +336,4 @@ window.onload = function () {
 
     })
   }
-
-  
 }
