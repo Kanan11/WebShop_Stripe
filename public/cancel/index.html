@@ -1,17 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmation</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../styles.css" />
+<script defer src="https://js.stripe.com/v3/"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation</title>
+
 </head>
-
 <body>
-    <h1>Tyvär din order är avbruten!</h1>
-    <a href="http://localhost:3001/">GÅ TILL HOME PAGE</a>
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav__center container">
+      <div class="nav__logo">
+        <h1>HEMLAGAT<span> Pizzeria</span></h1>
+        
+      </div>
+      <ul class="nav__list">
+        <a href="#" class="galeria">Galeria</a> <br>
+        <a href="#" class="galeria">Om oss</a>
+        <div class="cart__icon">
+          <h2>varukorg</h2>
+          <span class="item__total">0</span>
+        </div>
+      </ul>
+
+     </div>
+  </nav>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="../images/img_7.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+
+        <h1 class="display-5 fw-bold lh-1 mb-3">Tyvär din order är avbruten!</h1>
+       <br>
+       <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="/">GÅ TILL HOME PAGE</a></button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<body>
 
 </body>
 
-</html>

@@ -15,7 +15,7 @@ app.post('/api/checkout-session', async (req, res) => {
     let carts = []
     cart.forEach((cart) => {
       let lineItem = {
-        //description: '.',
+        //description: session,
         price_data: {
           currency: "sek",
           product_data: {
@@ -29,14 +29,12 @@ app.post('/api/checkout-session', async (req, res) => {
       carts.push(lineItem);
     });
 
-    //console.log(carts)
-
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: carts,
       mode: "payment",
-      success_url: "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
+      success_url: "http://localhost:3001/confirmation?session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: "http://localhost:3001/cancel",
     }
 
     );
@@ -64,26 +62,10 @@ app.post('/api/checkout-session', async (req, res) => {
   }
 })
 
-app.post('/verify-checkout-session', async (req, res) => {
-    try {
-        const session = await stripe.checkout.sessions.retrieve(req.body.sessionId)
-        console.log(session)
-        console.log('banan')
-        if (session) {
-            res.send({ isVerified: true })
-        } else {
-            throw new Error('no session')
-        }
-    } catch (error) {
-        console.error(error)
-        res.send({ isVerified: false });
-    }
-});
 
+//-------------------------HÄR ANNAT ALTERNATIVT SOM FUNGERAR LIKA SAMMA---------------------------
 
-
-
-app.post("/verify", async (req, res) => {
+/* app.post("/verify", async (req, res) => {
   const sessionID = req.body.sessionID;
 
   const completedOrder = await stripe.checkout.sessions.retrieve(sessionID);
@@ -124,8 +106,42 @@ app.post("/verify", async (req, res) => {
 }
 verifyOrder();
 }
-);
+); */
 
+
+app.post("/verify/:sessionId", async (req, res) => {
+  //const sessionId = req.body.sessionId;
+  const sessionId = req.params.sessionId;
+  const session = await stripe.checkout.sessions.retrieve(sessionId);
+//console.log("banan")
+  if (session.payment_status == "paid") {
+    let orderJson = fs.readFileSync("orders.json");
+    let data = JSON.parse(orderJson);
+    let orderItem = data.find(orderItem => orderItem.sessionId === sessionId)
+    if (!orderItem) {
+      orderItem = {
+          sessionId: session.id,
+          customerEmail: session.customer_details.email,
+          totalPrice: session.amount_total / 100,
+          currency: session.currency,
+      };
+      data.push(orderItem);
+      fs.writeFileSync("orders.json", JSON.stringify(data));
+      res.json(true);
+
+    }
+  } else {
+    res.status(200).json({ paid: false });
+  }
+
+});
+
+app.get("/purchases", async (req, res) => {
+    
+  let orderJson = fs.readFileSync("orders.json");
+  let data = JSON.parse(orderJson);
+  res.status(200).json(data);
+});
 
 app.use(express.static('public'))
 

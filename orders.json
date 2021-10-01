@@ -1,452 +1,233 @@
 [
-  {
-    "id": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_b1aonoVwHIOv3vFGnRdsYoSHwjx8odaXYF7VJvKIj0k73ZBotxtCIGjUrI",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 360,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1a5Z9NpSQ8KO",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a1bWEaKHX0Kza7H7vfIevSFwyPD7XA8D1uaxqmrkHKHI5x4t7AL1gFH7qE",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 510,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088102,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNXWEUI9kk9Axt145Yzvoe",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1dt76NAl3P3pmUWfva0QB0JQLauTKrjdinrT9XYBI0z2bB3HonDwLbGgQ",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 510,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5"
-  },
-  {
-    "id": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "customerId": "cus_KKMxJOfg2R9UeL",
+        "sessionId": "cs_test_a1bbybYX4zsPYkepDUvCFQwGXoAGciqnKJbOLBFWTA9r2tNQpDMW1MlZ4W",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 510,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1a5Z9NpSQ8KO",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "customerId": "cus_KKMyNXCPQGlk29",
+        "sessionId": "cs_test_a1V8mDoi62opMCXIPALcmuwZFqH4i6aIjbrD9OHBJOAFnoz9SByA2P8iPB",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 510,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088102,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNXWEUI9kk9Axt145Yzvoe",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "customerId": "cus_KKN4KCQ8LEV82K",
+        "sessionId": "cs_test_a1pXZyhOOz6LhHSdrJXYlYqxW8r3gj5tNYHRAdka9iAW2fXGOOeKQli4TT",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 510,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5"
-  },
-  {
-    "id": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "customerId": "cus_KKNzlwMnrOox1T",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 595,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1a5Z9NpSQ8KO",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "customerId": "cus_KKO0hiv0pYvLg4",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 595,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088102,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNXWEUI9kk9Axt145Yzvoe",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "customerId": "cus_KKO1Vk8JWi2nTZ",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 595,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5"
-  },
-  {
-    "id": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_a1CkHGrWWRFZ8o3kikeVTkLLveImhdPQWvmrF4qH112RyKi2JLetZBKPQA",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 595,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1a5Z9NpSQ8KO",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a1jOE2uCX6xUHuF1ZCXmiWnakPWK0TYPHN6hqLQd8yNoVp6FC7rehmhYIo",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 595,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088102,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNXWEUI9kk9Axt145Yzvoe",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1B41fRSJfY99tPggfdvUHoExsuPLNsJZ2xw3zrPGiHliAQwaxvFBtvw88",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 595,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5"
-  },
-  {
-    "id": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_a1ke3wP54ibaJjZjbeL9YwXy08AJGajFx2M4NMhrO6XCh8UoA7Qzk3ZtG6",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1a5Z9NpSQ8KO",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a1nPVGKVGHGFU58AgeC7x4LTFqgowcEGWWWjj63N4AK3RxZQ5OEeIr3jYG",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088102,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNXWEUI9kk9Axt145Yzvoe",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1z0ozhfNRq1bMaH0EL01lvBSPsnoDQjbxR7zEebyr9rvIOY60VGYJOXFF",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5"
-  },
-  {
-    "id": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_a1z0ozhfNRq1bMaH0EL01lvBSPsnoDQjbxR7zEebyr9rvIOY60VGYJOXFF",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1a5Z9NpSQ8KO",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a1z0ozhfNRq1bMaH0EL01lvBSPsnoDQjbxR7zEebyr9rvIOY60VGYJOXFF",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088102,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNXWEUI9kk9Axt145Yzvoe",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1OMMQbhJMkqNgCgRVNOQKq2vWZmytu1TKVKfND02Tq2Pa77Hufg0bowCh",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1FkYiDp4ApIf1IrhWjm59lKkeliN3122lvyy6ag9tGeqfGqxOZQdK5eu5"
-  },
-  {
-    "id": "cs_test_a1ZO9L1spvYI1ha0gECLRtIp1vb1FA0l7iY6jled5lYikcbCRsGWMmnPlA",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_a1DSKSXpFA5TYa3G4WeW3ifNtDCgQvEUpycywSJD2CCkMUnBUOeoBYM9s4",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1pAAI9YDt4Vm",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a1uRBJqVKLHlYIeIzEdmYCYRA2yMJdxCZEpBhpZMupjmuzzSyNKaqle51P",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633088998,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNlyEUI9kk9Axt1hyR4fHT",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1G8k8rhu4JAvf4ffOZ5388liLUc0BvGeVEgiB92ssPyeAfOh2Fxl137Vb",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1ZO9L1spvYI1ha0gECLRtIp1vb1FA0l7iY6jled5lYikcbCRsGWMmnPlA"
-  },
-  {
-    "id": "cs_test_a1UcpqQM48WhsDuER0J6m9iB3QH1dbMWo50yuMULRga2neepyGdz6j7v8d",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_a146NxF6KflsXC6wFI83lh8OHFLikIPLBS8DTnHpqakoeIgOWq8cbYONAv",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 95,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1rIO2rw4RRqy",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a10hQbh3JEWVFNNOVxiAijfs9Lmlc060pPJ2IlzGmuiZUkYySzUKnzGqKn",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 95,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633089090,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNnSEUI9kk9Axt1ELY9met",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1s2sA7VQByQ6U6yXbeRrRdCVEdILcmVeUOfDyQc7eHGEw2ZIz09CcLhpG",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1UcpqQM48WhsDuER0J6m9iB3QH1dbMWo50yuMULRga2neepyGdz6j7v8d"
-  },
-  {
-    "id": "cs_test_a1UcpqQM48WhsDuER0J6m9iB3QH1dbMWo50yuMULRga2neepyGdz6j7v8d",
-    "object": "checkout.session",
-    "after_expiration": null,
-    "allow_promotion_codes": null,
-    "amount_subtotal": 7500,
-    "amount_total": 7500,
-    "automatic_tax": {
-      "enabled": false,
-      "status": null
+    {
+        "sessionId": "cs_test_a1o0e42ZtzH2qmy931SppBReSgltCAMNx7rk6ia3Z2aNebzP3kJw4wQkGQ",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "billing_address_collection": null,
-    "cancel_url": "http://localhost:3001/cancel/?session_id={CHECKOUT_SESSION_ID}",
-    "client_reference_id": null,
-    "consent": null,
-    "consent_collection": null,
-    "currency": "sek",
-    "customer": "cus_KK1rIO2rw4RRqy",
-    "customer_details": {
-      "email": "kenan@luxar.se",
-      "tax_exempt": "none",
-      "tax_ids": []
+    {
+        "sessionId": "cs_test_a1o0e42ZtzH2qmy931SppBReSgltCAMNx7rk6ia3Z2aNebzP3kJw4wQkGQ",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "customer_email": null,
-    "expires_at": 1633089090,
-    "livemode": false,
-    "locale": null,
-    "metadata": {},
-    "mode": "payment",
-    "payment_intent": "pi_3JfNnSEUI9kk9Axt1ELY9met",
-    "payment_method_options": {},
-    "payment_method_types": [
-      "card"
-    ],
-    "payment_status": "paid",
-    "recovered_from": null,
-    "setup_intent": null,
-    "shipping": null,
-    "shipping_address_collection": null,
-    "submit_type": null,
-    "subscription": null,
-    "success_url": "http://localhost:3001/confirmation/?session_id={CHECKOUT_SESSION_ID}",
-    "total_details": {
-      "amount_discount": 0,
-      "amount_shipping": 0,
-      "amount_tax": 0
+    {
+        "sessionId": "cs_test_a1o0e42ZtzH2qmy931SppBReSgltCAMNx7rk6ia3Z2aNebzP3kJw4wQkGQ",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
     },
-    "url": null,
-    "sessionId": "cs_test_a1UcpqQM48WhsDuER0J6m9iB3QH1dbMWo50yuMULRga2neepyGdz6j7v8d"
-  }
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1gk5vWosIU92SWaNvXKwmfAyTRmS50L1Zn1sz3T9kCDVttbUbgQn2cRdX",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 75,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a17SfYqPvmSn4TzVyKlXp2CarsWHUCzgrCcIyZ3VbqdqNutfZPLt6XPVsT",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1yyHqmk9e9pjrkqAjOyIdu2zu9OFijUffPxhH5TzOy39CYjqeD1HE8qow",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 85,
+        "currency": "sek"
+    },
+    {
+        "sessionId": "cs_test_a1FKFx6avQgQ5oaX9fm4av3BBLYozKilbDm6W3a9nKLuGcChJQB0ShWs6E",
+        "customerEmail": "kenan@luxar.se",
+        "totalPrice": 90,
+        "currency": "sek"
+    }
 ]

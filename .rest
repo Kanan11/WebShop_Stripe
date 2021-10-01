@@ -2,9 +2,9 @@ POST http://localhost:3001/api/checkout-session
 
 ###
 
-POST http://localhost:3001/api/verify-checkout-session
+POST http://localhost:3001/verify
 Content-Type: application/json
 
 {
-    "sessionId": ""
+    "sessionId": "cs_test_a1z0ozhfNRq1bMaH0EL01lvBSPsnoDQjbxR7zEebyr9rvIOY60VGYJOXFF"
 }
